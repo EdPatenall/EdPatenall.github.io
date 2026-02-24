@@ -1,38 +1,74 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index_styles.css">
+  <link rel="stylesheet" href="contact_styles.css">
 </head>
 
 <body>
 
-    <div class="navbar splashtitle">
-        <h1>Portfolio: Ed Patenall</h1>
-        <h2>Contact</h2>
-    </div>
+  <div class="navbar splashtitle">
+    <h1>Portfolio: Ed Patenall</h1>
+    <h2>Contact</h2>
+  </div>
 
-    <div class="navbar navbuttons">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./cv.html">C.V.</a></li>
-    
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
-            <div class="dropdown-content">
-              <a href="./projects/project1.html">Link 1</a>
-              <a href="./projects/project2.html">Link 2</a>
-              <a href="./projects/project3.html">Link 3</a>
-            </div>
-          </li>
-    
-          <li><a class="active" href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-    <main>
+  <div class="navbar navbuttons">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./cv.html">C.V.</a></li>
 
-        <h2 style="color:red">This site is currently a work in progress!</h2>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
+        <div class="dropdown-content">
+          <a href="./projects/project1.html">Link 1</a>
+          <a href="./projects/project2.html">Link 2</a>
+          <a href="./projects/project3.html">Link 3</a>
+        </div>
+      </li>
 
-    </main>
+      <li><a class="active" href="./contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <main>
+
+    <!-- <h2 style="color:red">This site is currently a work in progress!</h2> -->
+
+    <h2>Get in touch:</h2>
+
+    <p>Unfortunately Github Pages doesn't support PHP, so the neat contact form I made below 
+      can't actually do anything.
+    </p>
+
+    <p>Instead, please contact me at <a href="mailto:edpatenall+jobs@gmail.com">edpatenall ([at]) gmail.com.</a>
+    </p>
+
+    <form>
+
+        <label for="name">Your name:</label>
+        <input type="text" id="name" required placeholder="Your name">
+
+      <br>
+
+        <label for="org">Your organisation:</label>
+        <input type="text" id="org" placeholder="Your organisation">
+
+      <br>
+
+        <label for="returnemail">Your email address:</label>
+        <input type="email" id="returnemail" required placeholder="youremail@example.com">
+
+      <br>
+
+        <label for="message">Your message:</label>
+        <br>
+        <textarea name="message" id="message" required placeholder="This form doesn't actually work, as Github Pages doesn't support PHP. If you type anything in here and expect a response, you will be somewhat disappointed."></textarea>
+
+      <br>
+
+        <input id="submitbutton" type="submit" disabled>
+
+    </form>
+
+  </main>
 
 </body>
 

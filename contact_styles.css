@@ -1,0 +1,45 @@
+@import "index_styles.css";
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    text-align: left;
+    width:100%;
+    margin:auto;
+}
+
+form label{
+    grid-column: 1;
+}
+
+form input{
+    grid-column: 2;
+}
+
+
+input{  
+    width: 20%;
+    transition: width 0.4s ease-in-out;
+    margin: 4px 0;
+}
+input:not(:placeholder-shown):not(:focus){
+    width: 90%;
+}
+input:focus {
+    width: 100%;
+}
+input:invalid:not(:placeholder-shown) {
+    background-color: lightcoral;
+}
+
+#message{
+    grid-column: 1 / span 2;
+    min-width: 80%;
+    min-height: 200px;
+}
+
+#submitbutton{
+    grid-column: 1;
+    width: auto;
+    margin: 0;
+}
